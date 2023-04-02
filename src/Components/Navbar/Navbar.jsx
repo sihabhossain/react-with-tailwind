@@ -34,15 +34,26 @@ const Navbar = () => {
   ];
 
   return (
-    <nav>
+    <nav className="bg-purple-400">
       <div
+        className="md:hidden"
         onClick={() => {
           SetOpen(!open);
         }}
       >
-        <Bars4Icon className="h-6 w-6 text-purple-500" />
+        <span>
+          {open === true ? (
+            <XMarkIcon className="h-6 w-6 text-purple-500" />
+          ) : (
+            <Bars4Icon className="h-6 w-6 text-purple-500" />
+          )}
+        </span>
       </div>
-      <ul className="md:flex">
+      <ul
+        className={`md:flex absolute md:static duration-500 py-2 bg-purple-500 pl-10 pb-3 ${
+          open ? "top-6" : "-top-36"
+        }`}
+      >
         {routes.map((route) => (
           <Link route={route} key={route.id}></Link>
         ))}
