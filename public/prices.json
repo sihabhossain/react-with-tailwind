@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Basic",
+        "price": 20,
+        "features": [
+            "gym access",
+            "locker room"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Premium",
+        "price": 50,
+        "features": [
+            "gym access",
+            "locker room",
+            "group classes"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Ultimate",
+        "price": 100,
+        "features": [
+            "gym access",
+            "locker room",
+            "group classes",
+            "personal training"
+        ]
+    }
+]
